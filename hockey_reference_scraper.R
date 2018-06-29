@@ -1,10 +1,8 @@
 library(tidyverse)
 library(rvest)
 
-# Establish # of seasons scraping, and base URL
+# Establish # of seasons scraping
 season <- seq(1988, 2018, by = 1)
-urls <- data_frame(url = str_c("https://www.hockey-reference.com/leagues/NHL_",season,"_games.html"), 
-                  season = season)
 
 # Gets season schedule, so I have a data frame of the exact games I want to scrape
 get_schedule <- function(season) {
