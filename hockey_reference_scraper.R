@@ -74,4 +74,4 @@ progress_bar <- link_list %>%
 box_score_data <- map_df(1:nrow(link_list), try_get_box_score, my_data = link_list)
 
 # Saves data to an ".rds" file
-#saveRDS(box_score_data, "hockey_reference_box_score_data.rds")
+# saveRDS(box_score_data, "hockey_reference_box_score_data.rds")
